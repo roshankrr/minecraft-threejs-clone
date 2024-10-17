@@ -158,6 +158,16 @@ export const blocks = {
       new THREE.MeshLambertMaterial({ color: 0x80c080, map: textures.grassSide })  // back
     ]
   },
+  water: {
+    id: 15,
+    name: 'water',
+    visible: true,
+    material: new THREE.MeshPhongMaterial({
+      color: 0x3090FF,
+      transparent: true,
+      opacity: 0.5
+    })
+  },
 };
 
 export const resources = [
